@@ -1,0 +1,17 @@
+$sizes: (
+  xs: 10px,
+  sm: 20px,
+  md: 30px,
+  lg: 60px,
+  xl: 120px,
+  xxl: 240px
+);
+@each $key, $value in $sizes {
+    .p-#{$key}{
+        padding-block:  $value;
+        &-inline{
+            padding-inline: $value;
+           
+            }
+        }
+    }
